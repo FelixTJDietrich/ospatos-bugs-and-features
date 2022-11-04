@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-   - type: checkboxes
+  - type: checkboxes
     id: new-bug
     attributes:
       label: Is there an existing issue for this?
