@@ -37,21 +37,6 @@ body:
         - Safari
         - Microsoft Edge
   - type: checkboxes
-    id: mobile
-    attributes:
-      label: What kind of devices are affected with the problem?
-      multiple: true
-      options:
-        - Mobile (iOS)
-        - Mobile (Android)
-        - Desktop
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
