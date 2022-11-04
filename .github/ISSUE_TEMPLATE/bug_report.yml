@@ -1,22 +1,22 @@
-name: Bug Report
+name: 🐛 Bug Report
 description: File a Ospatos bug report
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug"]
 assignees:
-  - octocat
+  - FelixTJDietrich
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
+   - type: checkboxes
+    id: new-bug
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -24,16 +24,6 @@ body:
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
     validations:
       required: true
   - type: dropdown
@@ -46,6 +36,15 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+  - type: checkboxes
+    id: mobile
+    attributes:
+      label: What kind of devices are affected with the problem?
+      multiple: true
+      options:
+        - Mobile (iOS)
+        - Mobile (Android)
+        - Desktop
   - type: textarea
     id: logs
     attributes:
