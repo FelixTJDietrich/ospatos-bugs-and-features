@@ -2,7 +2,7 @@
 name:  Feature Request 🚀
 about: Use this template for new features.
 title: "[Feature Request]: [Feature NAME]"
-labels: feature request
+labels: enhancement
 assignees: FelixTJDietrich
 ---
 ## Feature Request 🚀
